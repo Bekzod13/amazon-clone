@@ -66,6 +66,7 @@ header{
     left: 24%;
     color: var(--aqua);
     background: var(--bg);
+    padding: 0 3px;
 }
 .nav-link-container{
     display: flex;

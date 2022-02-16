@@ -41,14 +41,11 @@ const Navigation = () => {
     </nav>
     <div className="nav-bottom">
       <div className="container nav-bottom-box">
-      <Link to="/products" className="nav-bottom-link">
-          All
-        </Link>
-        <Link to="/products/new" className="nav-bottom-link hover transition">
+        <Link to="/" className="nav-bottom-link hover transition">
           New Products
         </Link>
-        <Link to="/products/baby" className="nav-bottom-link hover transition">
-          Baby
+        <Link to="/products/jewelery" className="nav-bottom-link hover transition">
+          Jewelery
         </Link>
         <Link to="/products/man" className="nav-bottom-link hover transition">
           Man
@@ -58,12 +55,6 @@ const Navigation = () => {
         </Link>
         <Link to="/products/electronics" className="nav-bottom-link hover transition">
           Electronics
-        </Link>
-        <Link to="/products/home" className="nav-bottom-link hover transition">
-          Home
-        </Link>
-        <Link to="/products/cars" className="nav-bottom-link hover transition">
-          Cars
         </Link>
       </div>
     </div>

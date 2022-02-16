@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 
 // import pages
 import Home from './pages/Home';
+import AllProducts from './pages/AllProducts';
 
 function App() {
 
@@ -42,6 +43,8 @@ function App() {
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<Home />}/>
+                    <Route path="/products/:category" element={<AllProducts />}/>
+                    {/* <Route path="/" element={<Home />}/> */}
                 </Routes>
                 <Footer/>
             </Router>
