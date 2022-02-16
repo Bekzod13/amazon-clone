@@ -1,0 +1,71 @@
+.sign{
+    width: 100%;
+    height: 120vh;
+    background: var(--bg);
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.user-details-box{
+    width: 300px;
+    margin: 20px auto;
+}
+.sign-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sign-header{
+    margin-bottom: 20px;
+}
+.sign-form-box{
+    border: var(--aqua) 1px solid;
+    border-radius: 5px;
+    color: var(--wht);
+    padding: 20px;
+}
+.sign-form-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.sign-label{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.sign-input{
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.submit-btn{
+    height: 30px;
+    background: var(--aqua);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--bg);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.submit-btn span{
+    display: flex;
+    color: var(--bg);
+    font-weight: 700;
+}
+.terms{
+    margin-bottom: 10px;
+    text-align: left;
+    word-spacing: 2px;
+    font-weight: 300;
+    font-size: 12px;
+}

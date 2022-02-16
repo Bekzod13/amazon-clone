@@ -10,6 +10,8 @@ import Footer from "./components/footer/Footer";
 // import pages
 import Home from './pages/Home';
 import AllProducts from './pages/AllProducts';
+import Login from './pages/Login'
+import Register from './pages/Register';
 
 function App() {
 
@@ -44,7 +46,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />}/>
                     <Route path="/products/:category" element={<AllProducts />}/>
-                    {/* <Route path="/" element={<Home />}/> */}
+                    <Route path="/sign-up" element={<Register />}/>
+                    <Route path="/sign-in" element={<Login />}/>
                 </Routes>
                 <Footer/>
             </Router>

@@ -21,7 +21,7 @@ const Navigation = () => {
             </span>
           </Link>
           <div className='nav-link-container'>
-            <Link to='/profile' className="nav-item hover transition">
+            <Link to='/sign-up' className="nav-item hover transition">
               <p className="nav-user-top-status">Hello, Sign in</p>
               <h4 className="nav-user-profile-name">Account & List</h4>
             </Link>
