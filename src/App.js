@@ -14,6 +14,8 @@ function App() {
 
     const [products, setProducts] = useState([]);
 
+    const [productsMany, setProductsMany] = useState([]);
+
     useEffect(
         () => axios.get(`https://fakestoreapi.com/products?limit=8`).then(res => {
             setProducts(res.data);
@@ -23,9 +25,18 @@ function App() {
         []
     );
 
+    useEffect(
+        () => axios.get(`https://fakestoreapi.com/products`).then(res => {
+            setProductsMany(res.data);
+        }).catch(err => {
+            console.log(err);
+        }),
+        []
+    );
+
     return (
         <Context.Provider value={{
-                products
+                products, productsMany
             }}>
             <Router>
                 <Navigation/>
