@@ -9,6 +9,7 @@ body{
   font-size: 14px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+  background: var(--shd);
 }
 a{
   text-decoration: none;

@@ -9,8 +9,8 @@ import {FaFlagUsa} from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <>
-    <a href='#navbar' className="navbar-top hover transition">
+    <div>
+    <a href='#navbar' className="footer-top hover transition">
       Back to top
     </a>
     <div className='footer'>
@@ -124,7 +124,7 @@ const Footer = () => {
         <FaFlagUsa/> <span>United States</span>
       </Link>
     </div>
-    </>
+    </div>
   )
 }
 
