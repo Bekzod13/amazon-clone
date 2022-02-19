@@ -72,7 +72,7 @@ header{
     display: flex;
 }
 .nav-input{
-    width: calc(100% - 400px);
+    width: calc(100% - 440px);
     height: 55%;
     background: var(--wht);
     overflow: hidden;

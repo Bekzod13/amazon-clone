@@ -25,9 +25,9 @@ const Navigation = () => {
               <p className="nav-user-top-status">Hello, Sign in</p>
               <h4 className="nav-user-profile-name">Account & List</h4>
             </Link>
-            <Link to='/return-order' className="nav-item hover transition">
-              <p className="nav-user-top-status">Returns</p>
-              <h4 className="nav-user-profile-name">& Orders</h4>
+            <Link to='/about' className="nav-item hover transition">
+              <p className="nav-user-top-status">Dracula</p>
+              <h4 className="nav-user-profile-name"> & TimurDev</h4>
             </Link>
             <Link to='/cart' className="nav-cart">
               <span className="nav-cart-icon">

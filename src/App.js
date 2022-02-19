@@ -12,6 +12,8 @@ import Home from './pages/Home';
 import AllProducts from './pages/AllProducts';
 import Login from './pages/Login'
 import Register from './pages/Register';
+import SearchProducts from './pages/SearchProducts';
+import About from './pages/About';
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
                     <Route path="/products/:category" element={<AllProducts />}/>
                     <Route path="/sign-up" element={<Register />}/>
                     <Route path="/sign-in" element={<Login />}/>
+                    <Route path="/search" element={<SearchProducts />}/>
+                    <Route path="/about" element={<About />}/>
                 </Routes>
                 <Footer/>
             </Router>

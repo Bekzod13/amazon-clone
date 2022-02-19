@@ -1,0 +1,35 @@
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.search-product-box{
+    width: 23%;
+    min-width: 200px;
+    /* height: 400px; */
+    margin: 10px;
+    background: var(--wht);
+    padding: 20px 20px 50px 20px;
+    position: relative;
+}
+.search-pro-header{
+    font-size: 18px;
+}
+.search-pro-img{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-pro-img img{
+    width: 80%;
+}
+.seach-pro-details{
+    position: absolute;
+    bottom: 20px;
+}
+.search-pro-price{
+    margin-bottom: 20px;
+}
