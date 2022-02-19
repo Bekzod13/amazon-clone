@@ -3,7 +3,7 @@ import './about.css';
 
 // import images
 import Dracula from '../../images/authors/Dracula.jpg';
-// import Timur from '../../images/authors/Timur.jpg';
+import Timur from '../../images/authors/Timur.jpg';
 
 const AboutPage = () => {
   return (
@@ -24,7 +24,7 @@ const AboutPage = () => {
         <div className="about-text">
             <h2>Back End Developer</h2>
             <div className="about-img-box">
-                {/* <img src={Timur} alt="Timur" /> */}
+                <img src={Timur} alt="Timur" />
             </div>
             <p className="about-author">Timur Dev <br /> Timur Karabayev o'g'li</p>
             <p className="about-details">+998 99 040 40 47</p>
@@ -33,7 +33,7 @@ const AboutPage = () => {
         </div>
     </div>
     <div className="container about-bottom">
-        <p className="about-details">Ushbu website ma'lum bilimga ega bo'lgan va ishga kirish uchun portfolio tayyorlayotgan yosh va tajribasi oshirmoqchi bo'lgan dasturchila uchun maxsus tayyorlandi. Foydali bo'ladi degan umiddamiz</p>
+        <p className="about-details">Ushbu website ma'lum bilimga ega bo'lgan va ishga kirish uchun portfolio tayyorlayotgan yosh va tajribasi oshirmoqchi bo'lgan dasturchilar uchun maxsus tayyorlandi. Foydali bo'ladi degan umiddamiz</p>
         <p>Bizni donat bilan qo'llab quvvatlamoqchi bo'lsangiz</p>
         <a href="https://payme.uz/@dracula13">https://payme.uz/@dracula13 so'm bilan</a>
     </div>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Modal from 'react-modal';
 import './products.css';
+import { useCart } from 'react-use-cart';
 
 // import icons
 import {IoCloseCircleOutline} from 'react-icons/io5';
@@ -17,6 +18,8 @@ const Products = ({data}) => {
         setModal({product: null});
     }
     const {product} = modal;
+
+    const {addItem} = useCart();
 
   return (
       <>
@@ -57,7 +60,7 @@ const Products = ({data}) => {
                                         <BsFillStarFill/> {product.rating.rate}
                                     </span>
                                 </div>
-                                <div className="add-to-cart-btn transition" >Add to cart</div> 
+                                <div className="add-to-cart-btn transition"  onClick={() => addItem(product)} >Add to cart</div> 
                             </div>
                             <div className="modal-image">
                                 <img src={product.image} alt={product.title} />

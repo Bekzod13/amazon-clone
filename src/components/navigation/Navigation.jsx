@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from 'react-use-cart';
 import './navigation.css';
 
 // import icons
@@ -7,6 +8,9 @@ import {BiSearch} from 'react-icons/bi';
 import {IoBasketOutline} from 'react-icons/io5';
 
 const Navigation = () => {
+
+  const {totalUniqueItems} = useCart();
+
   return (
     <>
     <nav id='navbar'>
@@ -32,7 +36,7 @@ const Navigation = () => {
             <Link to='/cart' className="nav-cart">
               <span className="nav-cart-icon">
                 <IoBasketOutline/>
-                <span className="cart-icon-status">0</span>
+                <span className="cart-icon-status">{totalUniqueItems}</span>
               </span>
               <span className="nav-cart-text">cart</span>
             </Link>

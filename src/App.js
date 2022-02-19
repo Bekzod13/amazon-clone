@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {Context} from "./context/Context";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { CartProvider } from "react-use-cart";
 
 // import components
 import Navigation from "./components/navigation/Navigation";
@@ -14,6 +15,7 @@ import Login from './pages/Login'
 import Register from './pages/Register';
 import SearchProducts from './pages/SearchProducts';
 import About from './pages/About';
+import ShoppingCart from './pages/ShoppingCart';
 
 function App() {
 
@@ -40,22 +42,25 @@ function App() {
     );
 
     return (
-        <Context.Provider value={{
+        <CartProvider>
+            <Context.Provider value={{
                 products, productsMany
             }}>
-            <Router>
-                <Navigation/>
-                <Routes>
-                    <Route path="/" element={<Home />}/>
-                    <Route path="/products/:category" element={<AllProducts />}/>
-                    <Route path="/sign-up" element={<Register />}/>
-                    <Route path="/sign-in" element={<Login />}/>
-                    <Route path="/search" element={<SearchProducts />}/>
-                    <Route path="/about" element={<About />}/>
-                </Routes>
-                <Footer/>
-            </Router>
-        </Context.Provider>
+                <Router>
+                    <Navigation/>
+                    <Routes>
+                        <Route path="/" element={<Home />}/>
+                        <Route path="/products/:category" element={<AllProducts />}/>
+                        <Route path="/sign-up" element={<Register />}/>
+                        <Route path="/sign-in" element={<Login />}/>
+                        <Route path="/search" element={<SearchProducts />}/>
+                        <Route path="/about" element={<About />}/>
+                        <Route path="/cart" element={<ShoppingCart />}/>
+                    </Routes>
+                    <Footer/>
+                </Router>
+            </Context.Provider>
+        </CartProvider>
     );
 }
 
