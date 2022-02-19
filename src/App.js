@@ -41,10 +41,12 @@ function App() {
         []
     );
 
+    const [searchProduct, setSearchProduct] = useState('');
+
     return (
         <CartProvider>
             <Context.Provider value={{
-                products, productsMany
+                products, productsMany, searchProduct, setSearchProduct
             }}>
                 <Router>
                     <Navigation/>

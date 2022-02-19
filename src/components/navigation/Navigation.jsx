@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
+import { Context } from '../../context/Context';
 import './navigation.css';
 
 // import icons
@@ -11,6 +12,8 @@ const Navigation = () => {
 
   const {totalUniqueItems} = useCart();
 
+  const search = useContext(Context);
+
   return (
     <>
     <nav id='navbar'>
@@ -19,7 +22,7 @@ const Navigation = () => {
             amazon
           </Link>
           <Link to='/search' className="nav-input">
-            <input type="text" placeholder='Search*' />
+            <input type="text" placeholder='Search*' onChange={typing=> search.setSearchProduct(typing.target.value)} />
             <span className="nav-search-btn">
               <BiSearch/>
             </span>
