@@ -15,15 +15,12 @@ const SearchProduct = () => {
     <div className='container search-box'>
         {
             products.filter(
-
-                (product) => {
-                    if (data.searchProduct === '') {
-                        return product;
-                    }else if(product.title.toLowerCase().includes(data.searchProduct.toLowerCase())){
-                        return product;
-                    }
-                }
-
+                product => data.searchProduct === '' ? (
+                    product
+                )
+                :(
+                    product.title.toLowerCase().includes(data.searchProduct.toLowerCase())
+                )
             ).map( product => (
                 <div key={product.id} className="search-product-box">
                     <h2 className="search-pro-header">{product.title}</h2>
